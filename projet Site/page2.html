@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page2</title>
+  <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <!-- Barre de navigation -->
+  <header>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <ul>
+        <li><a href="page1.html">Présentation L2I</a></li>
+        <li><a href="page2.html">Niveaux</a></li>
+        <li><a href="page3.html">Département Informatique</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section class="slider_section">
+   <!-- Section de présentation avec une image -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+             <!-- Contenu de bienvenue -->
+              <div class="bienvenue">
+                  <h1>Les Niveaux de la L2I</h1>
+                  <p>Le département d'informatique est le cœur battant de l'innovation technologique</p>
+              </div>
+          </div>
+          <div class="col-md-6">
+            <!--Image-->
+            <div class="img-box">
+              <img src="img/slider1-img.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section de la présentation des niveaux -->
+
+<section class="niveaux_section layout_padding">
+  <div class="container">
+    <h2>Présentation des Niveaux</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Niveau</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>L1 - L2I</td>
+          <td>Licence 1 en Ingénierie Informatique</td>
+        </tr>
+        <tr>
+          <td>L2 - L2I</td>
+          <td>Licence 2  en Ingénierie Informatique</td>
+        </tr>
+        <tr>
+          <td>L3 - L2I</td>
+          <td>Licence 3 en Ingénierie Informatique</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!--section de la présentation des enseignement -->
+    <section class="niveaux_section layout_padding">
+      <div class="container">
+        <h2>Présentation des Enseignement (Semestre 4) </h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Matiére</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>JavaScript</td>
+              <td>Developpement-web BACK-END</td>
+            </tr>
+            <tr>
+              <td>Java</td>
+              <td>Programmation Orienté Object</td>
+            </tr>
+            <tr>
+              <td>Base de Données</td>
+              <td>Gestion des Base des données</td>
+            </tr>
+            <tr>
+              <td>ROO</td>
+              <td>Optimisation Combinatoire </td>
+            </tr>
+            <tr>
+              <td>Complexites Algorithmique</td>
+              <td>Consiste à etudier la Complexité des algorithmes</td>
+            </tr>
+            <tr>
+              <td>Anglais</td>
+              <td>Il pronent l'Anglais autour de l'informatique</td>
+            </tr>
+            <tr>
+              <td>Service Réseaux</td>
+              <td>Initie les etudiants a la configuration des Serveur comme DNS , DHCP ,...</td>
+            </tr>
+            <tr>
+              <td>Réseaux Locaux</td>
+              <td> Initie les etudiants dans le domaine des reseaux LANs</td>
+            </tr>
+            <tr>
+              <td>Administration système</td>
+              <td> Initie les etudiants sur les systèmes d'exploitations (Ubuntu , Windows , ...)</td>
+            </tr>
+          </tbody>
+        </table>
+<!-- le formulaire 1 -->
+    <section class="niveaux_section layout_padding">
+      <div class="container">
+        <h2>FORMULAIRE 1 (ajout d'enseignent souhaiter)</h2>
+        <table>
+          <div class="couleurRemarque">
+          <p ><u><h3>Remarque:</h3></u><br>- Nom (obligatoire, 8 lettres au minimum et 30 lettres au maximum) ;<br>
+          - Description (obligatoire, 50 lettres au minimum).</p><br><br>
+        </div>
+          <thead>
+            <tr>
+              <th>Niveau</th>
+              <th>Nom de l'enseignant</th>
+              <th>Description de l'enseignant</th>
+            </tr>
+            <tr>
+              <td>(Exemple1) L1</td>
+              <td>Youssou FAYE </td>
+              <td>Profésseur en Réseaux</td>
+            </tr>
+            <tr>
+              <td>(Exemple2) L2</td>
+              <td>Mme Marie NDIAYE </td>
+              <td>Profésseur en POO et JavaScript</td>
+            </tr>
+            
+          </thead>
+          <tbody id="enseignants_body">
+            <!-- Les enseignants seront ajoutés dynamiquement ici par JavaScript -->
+          </tbody>
+        </table>
+        <div id="form_container" style="display: none;">
+          <h3>Ajouter un enseignant</h3>
+          <form id="enseignant_form">
+            <select id="niveau_enseignant">
+              <option value="L2">L2</option>
+              <option value="L3">L3</option>
+            </select>
+            <input type="text" id="nom_enseignant" placeholder="Nom de l'enseignant" required>
+            <input type="text" id="description_enseignant" placeholder="Description de l'enseignant" required>
+            <button type="submit" id="ajouter_enseignant">Ajouter</button>
+          </form>
+        </div>
+        <button id="afficher_form">Ajouter Enseignement</button>
+      </div>
+    </section> 
+  </div>
+</section>
+<!--le pied de la page -->
+<footer class="footer_section">
+  <div class="container">
+      <p>&copy; All Rights Reserved By Ablaye Faye L2-L2I</p>
+  </div>
+</footer>
+
+<script src="javascript/js2.js"></script>
+
+
+
+</body>
+</html>

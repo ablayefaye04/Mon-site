@@ -1,0 +1,133 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(35, 21, 234);
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav button {
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+}
+/*le bienvenu*//* Style de base pour la zone de texte */
+.bienvenue {
+    width: 100%;
+    height: 90px; /* Ajustez la hauteur selon vos besoins */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Empêche le redimensionnement */
+}
+
+/* Animation pour changer la couleur */
+@keyframes changeColor {
+    0% { background-color: #ff9999; } /* Couleur de départ */
+    20% { background-color: #99ff99; } /* Couleur 1 */
+    40% { background-color: #99ccff; } /* Couleur 2 */
+    60% { background-color: #ffcc99; } /* Couleur 3 */
+    80% { background-color: #cc99ff; } /* Couleur 4 */
+    100% { background-color: #ff9999; } /* Couleur finale */
+}
+
+/* Appliquer l'animation à la zone de texte */
+.bienvenue {
+    animation: changeColor 10s infinite; /* Changer la couleur toutes les 10 secondes */
+}
+
+
+/* Hero Area Styles */
+.slider_section {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-item {
+    display: none;
+    position: relative;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+/* About Section Styles */
+.about_section {
+    padding: 50px 0;
+}
+
+.about_section .row {
+    align-items: center;
+}
+
+.detail-box {
+    padding: 0 30px;
+}
+
+/* Footer Section Styles */
+.footer_section {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Custom Styles */
+.box {
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.box p {
+    margin-bottom: 20px;
+}
+ 

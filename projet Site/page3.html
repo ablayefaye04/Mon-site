@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page3</title>
+  <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+
+<header>
+  <!-- Barre de navigation -->
+  <nav>
+    <a href="index.html">Accueil</a>
+    <ul>
+      <li><a href="page1.html">Présentation L2I</a></li>
+      <li><a href="page2.html">Niveaux</a></li>
+      <li><a href="page3.html">Département Informatique</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="slider_section">
+  <!-- Section de présentation du département informatique -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Contenu de bienvenue -->
+            <div class="detail-box">
+              <div class="bienvenue">
+                <header>
+                  <h1>Le Département Informatique</h1>
+                  <p>Nous croyons en une approche holistique de l'apprentissage </p>
+                </header>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- Image -->
+            <div class="img-box">
+              <img src="img/about-img1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section de présentation du département -->
+<section class="slider_section">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="detail-box">
+              <section id="presentation">
+                <header>
+                  <h2>Présentation du département</h2>
+                </header><br><br>
+                <!-- Contenu de la présentation du département -->
+                <p>Le département d'informatique est le cœur battant de l'innovation technologique au sein de notre université. Notre mission est de former une nouvelle génération d'ingénieurs informatiques prêts à relever les défis complexes du monde numérique en constante évolution.<br>
+
+                  Doté d'une équipe pédagogique hautement qualifiée et passionnée, le département offre un programme académique rigoureux et complet, couvrant une gamme diversifiée de sujets allant des fondements théoriques de l'informatique aux dernières avancées en matière de technologies émergentes.<br>
+                  
+                  Nous croyons en une approche holistique de l'apprentissage, combinant la théorie avec des projets pratiques et des expériences en situation réelle. Nos étudiants bénéficient d'un environnement d'apprentissage dynamique, stimulant leur créativité et les préparant à devenir des innovateurs dans leur domaine.<br>
+                  
+                  En plus de l'excellence académique, le département favorise également une communauté forte et dynamique, encourageant la collaboration entre étudiants, professeurs et professionnels de l'industrie. Des événements, des ateliers et des projets collaboratifs sont régulièrement organisés pour enrichir l'expérience éducative de nos étudiants et favoriser leur développement personnel et professionnel.<br>
+                  
+                  Que vous soyez passionné par la programmation, l'intelligence artificielle, la sécurité informatique ou tout autre domaine de l'informatique, le département d'informatique est l'endroit idéal pour explorer vos intérêts, développer vos compétences et réaliser votre potentiel dans le monde numérique en constante expansion.
+                  
+                  Joignez-vous à nous et plongez dans le passionnant voyage de la découverte informatique !</p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section de contact -->
+<section class="service_section layout_padding">
+  <div class="container">
+    <div class="heading_container heading_center">
+      <header>
+        <h1>Contact</h1>
+      </header>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="box">
+          <!-- Contacts -->
+          <div class="img-box">
+            <img src="images/s1.png" alt="">
+          </div>
+          <div class="detail-box">
+            <ul>
+              <li class="det"><a href="www.facebook.L2I.univ.sn"><img src="img/ff.jpeg" alt="Facebook"></a></li>
+              <li class="det"><a href="www.Instangram.L2I.univ.sn"><img src="img/inst.webp" alt="Instagram"></a></li>
+              <li class="det"><a href="www.twitter.L2I.univ.sn"><img src="img/twitter.jpg" alt="Twitter"></a></li>
+              <li class="det"><a href="www.whatsapp.L2I.univ.sn"><img src="img/whatsapp.jpg" alt="WhatsApp"></a></li>
+              <li>Email:<a href="L2I@zig.univ.sn"> L2I@zig.univ.sn</a></li>
+              <li>Numéro de téléphone: <a href="33 123 45 53">33 123 45 53</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section de formulaire de contact -->
+<section class="slider_section">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="detail-box">
+              <section id="formulaire2">
+                <h2>Formulaire 2</h2>
+                <!-- Formulaire de contact -->
+                <form id="contactForm2">
+                  <label for="prenom">Prénom:</label>
+                  <input type="text" id="prenom" name="prenom" required minlength="2" maxlength="30" placeholder="Prénom (obligatoire, 2 lettres au minimum et 30 lettres au maximum)"><br><br>
+            
+                  <label for="nom">Nom:</label>
+                  <input type="text" id="nom2" name="nom" required minlength="2" maxlength="30" placeholder="Nom (obligatoire, 2 lettres au minimum et 30 lettres au maximum)"><br><br>
+            
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Email (obligatoire, suivant le format : texte suivi d’arobase suivi de texte suivi de
+                  point suivi de texte)" required><br><br>
+            
+                  <label for="telephone">Téléphone:</label>
+                  <input type="tel" id="telephone" name="telephone" pattern="[0-9]{2} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="Téléphone (obligatoire, respecte le format téléphonique au Sénégal comportant 9
+                  chiffres (Exemple : 77 867 34 44)" required><br><br>
+            
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required maxlength="10" placeholder="obligatoire,10 lettres au maximum"></textarea><br><br>
+            
+                  <input type="submit" value="Envoyer">
+                </form>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer_section">
+  <div class="container">
+    <p>&copy; All Rights Reserved By Ablaye Faye L2-L2I</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header Styles */
+header {
+  background-color: #fff; /* Changement de couleur en blanc */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(35, 21, 234); /* Changement de couleur en jaune */
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+/*le bienvenue */
+/* Style de base pour la zone de texte */
+.bienvenue {
+  width: 100%;
+  height: 90px; /* Ajustez la hauteur selon vos besoins */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none; /* Empêche le redimensionnement */
+}
+
+/* Animation pour changer la couleur */
+@keyframes changeColor {
+  0% { background-color: #ff9999; } /* Couleur de départ */
+  20% { background-color: #99ff99; } /* Couleur 1 */
+  40% { background-color: #99ccff; } /* Couleur 2 */
+  60% { background-color: #ffcc99; } /* Couleur 3 */
+  80% { background-color: #cc99ff; } /* Couleur 4 */
+  100% { background-color: #ff9999; } /* Couleur finale */
+}
+
+/* Appliquer l'animation à la zone de texte */
+.bienvenue {
+  animation: changeColor 10s infinite; /* Changer la couleur toutes les 10 secondes */
+}
+
+
+/* Hero Area Styles */
+.hero_area {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero_bg_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg_img_box img {
+  width: 100%; /* Ajustement de la largeur à 100% */
+  height: auto; /* Réglage de la hauteur automatique */
+}
+
+/* Slider Section Styles */
+.slider_section {
+  padding: 50px 0;
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-item {
+  display: none;
+  position: relative;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+/* Service Section Styles */
+.service_section {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.service_container {
+  text-align: center;
+}
+
+.service_container .row {
+  margin-top: 30px;
+}
+
+.box {
+  background-color: #f8f8f8;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.box .img-box {
+  margin-bottom: 20px;
+}
+
+.box img {
+  max-width: 100%;
+}
+
+/* About Section Styles */
+.about_section {
+  padding: 50px 0;
+}
+
+.about_section .row {
+  align-items: center;
+}
+
+.detail-box {
+  padding: 0 30px;
+}
+span {
+  color: #e21818;
+  font-style : italic;
+  font-weight : bold;
+}
+
+/* Footer Section Styles */
+.footer_section {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+/* Styles spécifiques à la page 2 - Les Niveaux */
+.niveaux_section {
+  padding: 50px 0;
+}
+
+.niveaux_section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#form_container {
+  margin-top: 30px;
+}
+
+#enseignement_form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#enseignement_form input[type="text"] {
+  width: calc(50% - 10px);
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+#enseignement_form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#enseignement_form button:hover {
+  background-color: #0056b3;
+}
+.couleurRemarque{
+  color: red;
+}
